@@ -5,13 +5,18 @@ $(document).ready(function() {
   $(".clickable2").click(function() {
     $("#slideToggle").slideToggle();
   });
-  $("button#light").click(function(){
-    $("body").removeClass();
-    $("body").addClass("light");
+
+  var clickables = ["clickable1" , "clickable2"];
+  clickables.forEach(function(clickable){
+    
   });
-  $("button#dark").click(function(){
-    $("body").removeClass();
-    $("body").addClass("dark");
+
+  var buttons = ["light", "dark"];
+  buttons.forEach(function(button){
+    $("button#" + button).click(function() {
+      $("body").removeClass();
+      $("body").addClass(button);
+    });
   });
 
 });
