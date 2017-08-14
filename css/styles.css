@@ -20,11 +20,11 @@ p{
   text-align: center;
 }
 
-#fadeToggle {
+#clickable1 {
   display: none;
 }
 
-#slideToggle {
+#clickable2 {
   display: none;
 }
 
